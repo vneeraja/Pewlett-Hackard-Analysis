@@ -13,7 +13,7 @@ Entity-Relationship (ER) model is a visual representation of the table's structu
 
 ![image](https://user-images.githubusercontent.com/111020934/192436926-313791e3-2385-44a4-975d-4be02c8816ef.png)
 
-1. Determine the number of retiring employees per title.
+### 1. Determine the number of retiring employees per title.
 
 * We create a Retirement Titles table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. 
 ![image](https://user-images.githubusercontent.com/111020934/192437790-fe5c3917-d56b-432f-ab86-2b302af181c0.png)
@@ -31,7 +31,7 @@ The Unique Titles table is exported as unique_titles.csv.
 
 The Retiring Titles table is exported as retiring_titles.csv.
 
-2. Identify employees who are eligible to participate in a mentorship program.
+### 2. Identify employees who are eligible to participate in a mentorship program.
 
 * Create a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965. 
 We filter the data on the to_date column to all the current employees, then filter the data on the birth_date columns to get all the employees whose birth dates are between January 1, 1965 and December 31, 1965.
@@ -42,14 +42,14 @@ Export the Mentorship Eligibility table as mentorship_eligibilty.csv.
 
 ## Summary
 
-* How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+### 1. How many roles will need to be filled as the "silver tsunami" begins to make an impact?
  
 From the retiring tables we can see that the number of positions for the titles that will become vacant. These many roles will need to be filled.
 
 ![image](https://user-images.githubusercontent.com/111020934/192438325-c2c0b272-cd24-4b34-8c8f-5b2f391fb7a5.png)
 
 
-* Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+### 2. Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
 We can get the number of employees who are eligible to mentor in each of the departments by executing the below query:
 
@@ -63,6 +63,6 @@ The result shows the number of eligible employees to mentor the next generation 
 
 ![image](https://user-images.githubusercontent.com/111020934/192444107-14f25105-7e52-4db3-8a75-dca0a8780330.png)
 
-We can see that there are 435 eligible employees in the development department, the highest in all who can mentor the new employees joining the organization.
+**We can see that there are 435 eligible employees in the development department, the highest in all who can mentor the new employees joining the organization.**
 
 
