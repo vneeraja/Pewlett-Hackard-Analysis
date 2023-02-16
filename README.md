@@ -53,16 +53,16 @@ From the retiring tables we can see that the number of positions for the titles 
 
 We can get the number of employees who are eligible to mentor in each of the departments by executing the below query:
 
-select count(me.emp_no) as "Employees",d.dept_name into dept_eligibility
+**select count(me.emp_no) as "Employees",d.dept_name into dept_eligibility
 from mentorship_eligibilty as me 
 inner join dept_emp as de on (me.emp_no = de.emp_no)
 inner join departments as d on (de.dept_no = d.dept_no)
-group by d.dept_name;
+group by d.dept_name;**
 
 The result shows the number of eligible employees to mentor the next generation of Pewlett Hackard employees in each department.
 
 ![image](https://user-images.githubusercontent.com/111020934/192444107-14f25105-7e52-4db3-8a75-dca0a8780330.png)
 
-**We can see that there are 435 eligible employees in the development department, the highest in all who can mentor the new employees joining the organization.**
+**We can see that there are 435 eligible employees in the 'Development' department, the highest in all who can mentor the new employees joining the organization.**
 
 
